@@ -13,7 +13,7 @@ class Core
 
     public function __construct()
     {
-        $this->getUrl();
+        $url = $this->getUrl();
     }
 
     public function getUrl()
