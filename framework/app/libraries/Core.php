@@ -7,7 +7,7 @@
  */
 class Core
 {
-    protected $currentController = 'Pages';
+    protected $currentController = 'Posts';
     protected $currentMethod = 'index';
     protected $params = [];
 
@@ -16,6 +16,7 @@ class Core
         $url = $this->getUrl();
 
         if (file_exists('../app/controllers' . ucwords($url[0]) . '.php')) {
+            echo 'Gets here';
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
         }
