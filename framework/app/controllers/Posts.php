@@ -4,6 +4,6 @@ class Posts
 {
     public function __construct()
     {
-        echo 'Pages loaded';
+        echo 'Posts loaded';
     }
 }
