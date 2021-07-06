@@ -1,9 +1,9 @@
 <?php
 
-class Posts
+class Pages
 {
     public function __construct()
     {
-        echo 'Posts loaded';
+        echo 'Pages loaded';
     }
 }
