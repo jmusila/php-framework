@@ -16,7 +16,6 @@ class Core
         $url = $this->getUrl();
 
         if (file_exists('../app/controllers' . ucwords($url[0]) . '.php')) {
-            echo 'Gets here';
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
         }
@@ -32,7 +31,7 @@ class Core
             $url = rtrim($_GET['url'], '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
-
+            echo $url;
             return $url;
         }
     }
