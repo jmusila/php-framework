@@ -15,8 +15,6 @@ class Core
     {
         $url = $this->getUrl();
 
-        // echo $url;
-
         if (file_exists('../app/controllers' . ucwords($url[0]) . '.php')) {
             echo 'Gets here';
             $this->currentController = ucwords($url[0]);
