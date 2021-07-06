@@ -30,6 +30,8 @@ class Core
             }
         }
 
+        echo $this->currentMethod;
+
     }
 
     public function getUrl()
