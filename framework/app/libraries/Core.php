@@ -27,6 +27,8 @@ class Core
         if(isset($url[1])){
             if(method_exists($this->currentController, $url[1])){
                 $this->currentController = $url[1];
+
+                unset($url[1]);
             }
         }
 
