@@ -8,9 +8,11 @@ class Pages extends Controller
 
     public function index()
     {
+        $this->view('index');
     }
 
-    public function about()
+    public function about($id)
     {
+        
     }
 }
