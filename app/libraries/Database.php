@@ -14,7 +14,7 @@ class Database
     private $pass = DB_PASS;
     private $dbname = DB_NAME;
 
-    private $databaseHandler;
+    private $dbh;
     private $statement;
     private $error;
 
@@ -30,7 +30,7 @@ class Database
 
         //Create PDO Instance
         try {
-            $this->databaseHandler = new PDO($dsn, $this->error, $this->pass, $options);
+            $this->dbh = new PDO($dsn, $this->error, $this->pass, $options);
         } catch (\PDOException $e) {
             $this->error = $e->getMessage();
             throw $this->error;
