@@ -7,4 +7,4 @@ define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT', 'http://phpframework.com/framework/public');
 
 /** Site Name */
-define('SITENAME', 'MyFramework');
+define('SITENAME', 'MyApp');
