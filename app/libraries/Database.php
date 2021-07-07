@@ -33,7 +33,7 @@ class Database
             $this->dbh = new PDO($dsn, $this->error, $this->pass, $options);
         } catch (\PDOException $e) {
             $this->error = $e->getMessage();
-            throw $this->error;
+            echo $this->error;
         }
     }
 }

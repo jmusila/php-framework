@@ -10,7 +10,7 @@ define('DB_NAME', 'framework');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 /**URL root */
-define('URLROOT', 'http://phpframework.com/framework/public');
+define('URLROOT', 'http://phpframework.com/public');
 
 /** Site Name */
 define('SITENAME', 'MyApp');
