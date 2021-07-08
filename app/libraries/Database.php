@@ -76,4 +76,24 @@ class Database
     {
         return $this->statement->execute();
     }
+
+    /**
+     * Get results as array of objects
+     */
+    public function all()
+    {
+        $this->execute();
+        
+        return $this->statement->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    /**
+     * Get Single record as object
+     */
+    public function first()
+    {
+        $this->execute();
+
+        return $this->statement->fetch(PDO::FETCH_OBJ);
+    }
 }
