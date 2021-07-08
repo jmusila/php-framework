@@ -96,4 +96,12 @@ class Database
 
         return $this->statement->fetch(PDO::FETCH_OBJ);
     }
+
+    /**
+     * Get row count
+     */
+    public function rowCount()
+    {
+        return $this->statement->rowCount();
+    }
 }
