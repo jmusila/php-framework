@@ -7,16 +7,16 @@
 // $dotenv->load();
 
 /** DB Params */
-define('DB_HOST', 'localhost');
-define('DB_USER', 'myuser');
-define('DB_PASS', '123Me!@#');
-define('DB_NAME', 'framework');
+define('DB_HOST', 'DB_HOTS');
+define('DB_USER', 'DB_USER');
+define('DB_PASS', 'DB_PASSWORD');
+define('DB_NAME', 'DB_NAME');
 
 /** App root */
 define('APPROOT', dirname(dirname(__FILE__)));
 
 /**URL root */
-define('URLROOT', 'http://phpframework.com/public');
+define('URLROOT', 'APP_URL');
 
 /** Site Name */
-define('SITENAME', 'MyApp');
+define('SITENAME', 'APP_NAME');
