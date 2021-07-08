@@ -1,10 +1,10 @@
 <?php
 
-require_once "../libraries/DotEnv.php";
+// require_once "../libraries/DotEnv.php";
 
-$dotenv = new DotEnv(__DIR__ . "/.env");
+// $dotenv = new DotEnv(__DIR__ . "/.env");
 
-$dotenv->load();
+// $dotenv->load();
 
 /** DB Params */
 define('DB_HOST', 'DB_HOST');
