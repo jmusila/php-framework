@@ -1,5 +1,7 @@
 <?php
 
+namespace libraries;
+
 /**
  * Dot Env Class
  */
