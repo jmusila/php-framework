@@ -1,13 +1,13 @@
 <?php
 
-// require_once "../libraries/DotEnv.php";
+require_once "../libraries/DotEnv.php";
 
-// $dotenv = new DotEnv(__DIR__ . "/.env");
+$dotenv = new DotEnv(__DIR__ . "/.env");
 
-// $dotenv->load();
+$dotenv->load();
 
 /** DB Params */
-define('DB_HOST', 'DB_HOTS');
+define('DB_HOST', 'DB_HOST');
 define('DB_USER', 'DB_USER');
 define('DB_PASS', 'DB_PASSWORD');
 define('DB_NAME', 'DB_NAME');
