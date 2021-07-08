@@ -10,7 +10,7 @@ class Pages extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Welcome',
+            'title' => 'MusilaFramework',
         ];
 
         $this->view('pages/index', $data);
