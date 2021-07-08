@@ -68,4 +68,12 @@ class Database
         }
         $this->statement->bindValue($param, $value, $type);
     }
+
+    /**
+     * Execute query
+     */
+    public function execute()
+    {
+        return $this->statement->execute();
+    }
 }
