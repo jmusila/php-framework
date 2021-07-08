@@ -15,7 +15,7 @@ class Database
     private $dbname = DB_NAME;
 
     private $dbh;
-    private $statement;
+    private static $statement;
     private $error;
 
 
@@ -43,7 +43,7 @@ class Database
      */
     public function query($sql)
     {
-        $this->statement = $this->dbh->prepare($sql);
+        self::$statement = $this->dbh->prepare($sql);
     }
 
     /**
@@ -66,35 +66,35 @@ class Database
                     $type = PDO::PARAM_STR;
             }
         }
-        $this->statement->bindValue($param, $value, $type);
+        self::$statement->bindValue($param, $value, $type);
     }
 
     /**
      * Execute query
      */
-    public function execute()
+    public static function execute()
     {
-        return $this->statement->execute();
+        return self::$statement->execute();
     }
 
     /**
      * Get results as array of objects
      */
-    public function all()
+    public static function all()
     {
-        $this->execute();
+        self::execute();
         
-        return $this->statement->fetchAll(PDO::FETCH_OBJ);
+        return self::$statement->fetchAll(PDO::FETCH_OBJ);
     }
 
     /**
      * Get Single record as object
      */
-    public function first()
+    public static function first()
     {
-        $this->execute();
+        self::execute();
 
-        return $this->statement->fetch(PDO::FETCH_OBJ);
+        return self::$statement->fetch(PDO::FETCH_OBJ);
     }
 
     /**
@@ -102,6 +102,6 @@ class Database
      */
     public function rowCount()
     {
-        return $this->statement->rowCount();
+        return self::$statement->rowCount();
     }
 }

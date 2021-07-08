@@ -15,7 +15,7 @@ class Post
             "SELECT * FROM posts"
         );
 
-        $results = $this->db->all();
+        $results = Database::all();
 
         return $results;
     }
