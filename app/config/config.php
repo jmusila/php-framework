@@ -1,14 +1,16 @@
 <?php
 
-use libraries\DotEnv;
+// require_once "../libraries/DotEnv.php";
 
-(new DotEnv(__DIR__ . '/.env'))->load();
+// $dotenv = new DotEnv(__DIR__ . "/.env");
+
+// $dotenv->load();
 
 /** DB Params */
-define('DB_HOST', $_ENV['DB_HOST']);
-define('DB_USER', $_ENV['DB_USERNAME']);
-define('DB_PASS', $_ENV['DB_PASSWORD']);
-define('DB_NAME', $_ENV['DB_DATABASE']);
+define('DB_HOST', 'localhost');
+define('DB_USER', 'myuser');
+define('DB_PASS', '123Me!@#');
+define('DB_NAME', 'framework');
 
 /** App root */
 define('APPROOT', dirname(dirname(__FILE__)));

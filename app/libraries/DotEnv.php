@@ -1,6 +1,7 @@
 <?php
 
-namespace libraries;
+use InvalidArgumentException;
+use RuntimeException;
 
 /**
  * Dot Env Class
