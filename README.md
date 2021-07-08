@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Building a PHP Framework from Scratch
 
 ### How to have a copy of this framewprk and running it
