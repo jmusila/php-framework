@@ -1,9 +1,24 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Building a PHP Framework from Scratch
 
-### How to have a copy of this framewprk and running it
-    - Clone this Framework $git clone https://github.com/jmusila/php-framework.git
-    - create a virtual environment and access the framework
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-**Author** [Jonathan](https://github.com/jmusila)
+### Getting Started
+- Clone the repository ```$git clone https://github.com/jmusila/php-framework.git```
+- Navigate to the cloned repo
+
+#### Prerequisites
+1. PHP
+2. Apache/Nginx Server
+3. Virtual Host
+
+### Configuration
+After navigating to the repo:
+```
+Setup a virtual host
+Copy the .env.example file and rename it to .env
+Create a database and add the credentials on the .env file
+Add timezone and app name on the .env file
+```
+
+### Authors
+[Jonathan](https://github.com/jmusila)

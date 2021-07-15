@@ -1,22 +1,25 @@
 <?php
 
-// require_once "../libraries/DotEnv.php";
+require_once '../app/libraries/DotEnv.php';
 
-// $dotenv = new DotEnv(__DIR__ . "/.env");
+$dir = $_SERVER['DOCUMENT_ROOT'];
 
-// $dotenv->load();
+(new DotEnv($dir . '/.env'))->load();
 
 /** DB Params */
-define('DB_HOST', 'DB_HOST');
-define('DB_USER', 'DB_USER');
-define('DB_PASS', 'DB_PASSWORD');
-define('DB_NAME', 'DB_NAME');
+define('DB_HOST', getenv('DB_HOST'));
+define('DB_USER', getenv('DB_USERNAME'));
+define('DB_PASS', getenv('DB_PASSWORD'));
+define('DB_NAME', getenv('DB_DATABASE'));
+
+/** Time and Timezone */
+define('APP_TIMEZONE', getenv('APP_TIMEZONE'));
 
 /** App root */
 define('APPROOT', dirname(dirname(__FILE__)));
 
 /**URL root */
-define('URLROOT', 'APP_URL');
+define('URLROOT', getenv('APP_URL'));
 
 /** Site Name */
-define('SITENAME', 'APP_NAME');
+define('SITENAME', getenv('APP_NAME'));
